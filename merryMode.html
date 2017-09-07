@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>相亲模式</title>
+         <!--主体布局的css-->
+    <link type="text/css" rel="stylesheet" href="css/merryMode.css"/>
+         <!--轮播图的css-->
+    <link type="text/css" rel="stylesheet" href="css/slideshow.css"/>
+</head>
+<body>
+<!--页面左边区域开始-->
+  <div class="content">
+
+      <div class="content-head">
+          <div class="content-left">
+          </div>
+          <div class="content-center">
+            <div class="content-center-top">
+            	<!--图片轮播开始-->
+			    <div class="comiis_wrapad" id="slideContainer">
+			        <div id="frameHlicAe" class="frame cl">
+			            <div class="temp"></div>
+			            <div class="block">
+			                <div class="cl">
+			                    <ul class="slideshow" id="slidesImgs">
+			                        <li>			                        	
+			                            <a href="">
+			                            	<img id="preview1" src="img/demo1.jpg" width="410" height="400" alt="" name="pic1"/>
+			                            </a>			                            
+			                        </li>
+			                        <li>
+			                        	<a href="">
+			                            <img id="preview2" src="img/demo2.jpg" width="410" height="400" alt="" / name="pic2">
+			                        	</a>			                            
+			                        </li>			                        
+			                    </ul>
+			                </div>
+			                <div class="slidebar" id="slideBar">
+			                    <ul>
+			                        <li class="on">1</li>
+			                        <li>2</li>			                    
+			                    </ul>
+			                </div>
+			            </div>
+			        </div>
+			        <div class="showPoll" id="img-poll-wrap">			                            	
+	                    <span class="pollCount" id="imgshowPoll">0</span>
+	                    <span>票</span>                                                                                         
+			        </div>
+			    </div>
+			    
+			    <!--图片轮播结束-->
+             </div>
+             <div class="content-center-middle">
+              	<div class="lightLeft">
+              	   <p class="wrapLight yellowLight">
+	                  <span class="light">亮：</span>
+	                  <span class="lightNumber" id="showLightNumber">0</span>
+	               </p>
+                </div>
+                <div class="lightRight" id="yellowRightWrap">
+                  <textarea class="lightTeam textBg lightTexta" rows="3" id="lightTexta">亮灯队</textarea>
+                </div>
+                
+             </div>
+             <div class="content-center-bottom">
+              	<div class="lightLeft">
+              	   <p class="wrapLight redLight">
+	                  <span class="light">灭：</span>
+	                  <span class="lightNumber" id="showPutoutNumber">0</span>
+	              </p>
+                </div>
+                <div class="lightRight" id="redRightWrap">
+                  <textarea class="putoutTeam textBg lightTexta" rows="3" id="putoutTexta">灭灯队</textarea>
+                </div>
+             </div>
+          </div>
+          <div class="content-right">
+              <textarea class="setName textBg" rows="1">冠名</textarea>
+              <textarea class="customInfo textBg" rows="3">嘉宾信息</textarea>
+              <div class="playFlash">
+		            <object id="myId" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="407" height="305">
+						<param name="movie" value="swf/jscam2.swf"/>
+						<!--<param name="FlashVars" value="mode=callback&quality"/>
+						<param name="allowScriptAccess" value="always"/>-->
+						<param name="wmode" value="opaque"/>
+		        		<!--[if !IE]>-->
+						<object type="application/x-shockwave-flash" data="swf/jscam2.swf" width="407" height="305">
+						<!--<![endif]-->
+							<div>
+								<h1>Alternative content</h1>
+								<p><a href="http://www.adobe.com/go/getflashplayer"><img src="img/dance.gif" alt="Get Adobe Flash player" /></a></p>
+							</div>
+						<!--[if !IE]>-->
+						</object>
+						<!--<![endif]-->
+					</object>
+              </div>
+              <textarea class="instruction textBg" rows="5">报名私聊主播扣1，主播回复后发照片和资料亮灯带走，灭灯留下，5票记名，亮灯和改名环节可自救，亮灯/灭灯超过500票参与抽奖，520办结婚证。</textarea>
+          </div>
+                <!--显示抢亲图片的div-->
+          <div id="rob-Marriage">
+		    <ul>
+				<li class="robLi"><img src="img/se/sanshengsanshi/0.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/1.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/2.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/3.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/4.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/5.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/6.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/7.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/8.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/9.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/10.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/11.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/12.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/13.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/14.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/15.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/16.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/17.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/18.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/19.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/20.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/21.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/22.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/23.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/24.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/25.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/26.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/27.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/28.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/29.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/30.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/31.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/32.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/33.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/34.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/35.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/36.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/37.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/38.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/39.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/40.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/41.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/42.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/43.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/44.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/45.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/46.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/47.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/48.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/49.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/50.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/51.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/52.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/53.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/54.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/55.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/56.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/57.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/58.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/59.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/60.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/61.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/62.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/63.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/64.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/65.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/66.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/67.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/68.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/69.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/70.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/71.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/72.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/73.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/74.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/75.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/76.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/77.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/78.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/79.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/80.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/81.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/82.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/83.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/84.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/85.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/86.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/87.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/88.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/89.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/90.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/91.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/92.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/93.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/94.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/95.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/96.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/97.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/98.png" alt=""/></li>
+				<li class="robLi"><img src="img/se/sanshengsanshi/99.png" alt=""/></li>
+			</ul>
+          </div>
+               <!--显示牵手成功图片的div-->
+          <div id="success-hand">
+          	<ul>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_0.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_1.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_2.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_3.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_4.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_5.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_6.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_7.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_8.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_9.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_10.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_11.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_12.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_13.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_14.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_15.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_16.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_17.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_18.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_19.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_20.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_21.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_22.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_23.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_24.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_25.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_26.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_27.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_28.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_29.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_30.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_31.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_32.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_33.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_34.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_35.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_36.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_37.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_38.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_39.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_40.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_41.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_42.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_43.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_44.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_45.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_46.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_47.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_48.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_49.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_50.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_51.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_52.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_53.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_54.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_55.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_56.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_57.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_58.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_59.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_60.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_61.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_62.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_63.png" alt=""/></li>
+				<li class="sucLi"><img src="img/se/qianshou_success/qscg_64.png" alt=""/></li>
+			</ul>
+          </div>
+              <!--显示改名图片的div-->
+          <div id="change-name">
+          	<ul>
+				<li class="chLi"><img src="img/se/gaiming2/0.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/1.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/2.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/3.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/4.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/5.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/6.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/7.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/8.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/9.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/10.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/11.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/12.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/13.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/14.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/15.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/16.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/17.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/18.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/19.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/20.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/21.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/22.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/23.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/24.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/25.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/26.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/27.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/28.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/29.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/30.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/31.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/32.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/33.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/34.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/35.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/36.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/37.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/38.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/39.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/40.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/41.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/42.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/43.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/44.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/45.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/46.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/47.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/48.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/49.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/50.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/51.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/52.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/53.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/54.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/55.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/56.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/57.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/58.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/59.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/60.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/61.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/62.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/63.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/64.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/65.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/66.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/67.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/68.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/69.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/70.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/71.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/72.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/73.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/74.png" alt=""/></li>
+				<li class="chLi"><img src="img/se/gaiming2/75.png" alt=""/></li>
+		    </ul>
+          </div>
+      </div>
+      <div class="content-foot">
+          <div class="content-foot-top">
+              <!--<span class="writeTitle">上传图片-1</span>-->
+              <!--<form enctype="multipart/form-data" name="imgform1">-->
+              	<a href="javascript:;" class="Imgfile">选择图片1
+		        <input id="inputImg1" type="file" name="f" onchange="changeImg1()" />
+		        </a>
+              <!--</form>-->
+              <span>&nbsp;|&nbsp;</span>
+              <!--<span class="writeTitle">上传图片-2</span>-->
+              <!--<form enctype="multipart/form-data" name="imgform2">-->
+                <a href="javascript:;" class="Imgfile">选择图片2
+		        <input id="inputImg2" type="file" name="f" onchange="changeImg2()" />
+		        </a>
+              <!--</form>-->
+          </div>
+          <div class="content-foot-middle">              
+              	  <span class="writeTitle">亮灯票</span>                            	              
+		          <input type="text" id="lightNumber" class="form-input" size="10" name="lightNumber">
+		          <button type="button" id="changeLightNumber" class="changeButton" onclick="clNumber()" hidefocus="true">更改</button>	                                          
+	              <span>&nbsp;|&nbsp;</span>
+	              <span class="writeTitle">灭灯票</span>	                        	              
+		          <input type="text" id="putoutNumber" class="form-input" size="10" name="putoutNumber">
+		          <button type="button" id="changePutoutNumber" class="changeButton" value="submit" onclick="cpNumber()" hidefocus="true">更改</button>		          		      	          
+	              <span>&nbsp;|&nbsp;</span>
+	              <span class="writeTitle">亮灯总票</span>	                        	              
+		          <input type="text" id="lightSum" class="form-input" size="10" name="lightSum">
+		          <button type="button" id="changeLightSum" class="changeButton" onclick="lSum()" hidefocus="true">更改</button>		          		    	          
+	              <span>&nbsp;|&nbsp;</span>
+	              <span class="writeTitle">灭灯总票</span>	                      	              
+		          <input type="text" id="putoutSum" class="form-input" size="10" name="putoutSum">
+		          <button type="button" id="changePutoutSum" class="changeButton" onclick="pSum()" hidefocus="true">更改</button>		          		      
+          </div>
+          <div class="content-foot-bottom">
+          	
+              <button id="changeBackground" type="button" onclick="clickChangeBg()" hidefocus="true">更换背景</button>
+              <button id="robMarriage" type="button" onclick="robFunction()" hidefocus="true">抢亲</button>
+              <button id="closeRob" type="button" onclick="closeRobMerry()" hidefocus="true">关闭抢亲</button>
+              <button id="successHand" type="button" onclick="sucFuction()" hidefocus="true">牵手成功</button>
+              <button id="changeName"  type="button" onclick="renameFunction()" hidefocus="true">改名</button>
+              <button id="closeRename"  type="button" onclick="closeChangeName()" hidefocus="true">关闭改名</button>
+              <button id="resatrt" type="button" onclick="restart()" hidefocus="true">重新开始</button>
+             
+              <span style="margin-right: 1em;">&nbsp;|&nbsp;</span>
+              <a href="funModel.html" id="a-happy" class="">娱乐模式</a>
+              <a href="chatModel.html" id="a-chat" class="">连麦模式</a>
+              <a href="merryMode.html"  id="a-Marriage" class="">相亲模式</a>
+             
+          </div>
+      </div>
+</div>
+<div id="tipDiv">亮灯队分数不足</div>
+<div id="musicWrap"></div>
+<!--页面左边区域结束 -->
+<!--页面右边区域开始-->
+<!--
+	<div class="message">
+    <div class="message-top">
+        <textarea class="allChatContent" disabled="disabled"></textarea>   显示消息
+    </div>
+    <div class="message-bottom">
+    	<div class="send-left">
+           <textarea class="oneChatContent" rows="3" cols="80">请输入内容</textarea>  发送消息
+        </div>
+        <div class="send-right">
+          <button type="submit" id="sendButton" hidefocus="true">发送</button>
+        </div>
+    </div>
+</div>
+-->
+<!--页面右边区域结束-->
+<script src="lib/jquery-1.4.2.js" type="text/javascript"></script>
+<!--更换背景按钮和牵手成功按钮的特效的js文件-->
+<script src="lib/changeBackground.js" type="text/javascript"></script>
+<!--轮播特效的js文件-->
+<script src="js/slideshow.js" type="text/javascript"></script>
+<!--改名、关闭改名的函数-->
+<script src="js/rename.js" type="text/javascript"></script>
+<!--渲染亮灯、灭灯、抢亲、关闭抢亲、重新开始的函数-->
+<script src="js/refreshPoll.js" type="text/javascript"></script>
+<!--兼容IE嵌入Flash的swfobject.js-->
+<script type="text/javascript" src="lib/swfobject.js"></script>
+<script type="text/javascript" src="js/previewImg.js"></script>
+<script type="text/javascript">
+	swfobject.embedSWF("swf/jscam2.swf", "myId","407","305","9.0.0", "expressInstall.swf", flashvars, params, attributes);	
+</script>
+<script>
+        SlideShow(2000);  //调用轮播方法
+</script>
+</body>
+</html>

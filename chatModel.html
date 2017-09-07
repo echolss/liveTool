@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>连麦模式</title>
+         <!--主体布局的css-->
+    <link type="text/css" rel="stylesheet" href="css/chatMode.css"/>
+
+</head>
+<body>
+<!--页面左边区域开始-->
+  <div class="content">
+
+      <div class="content-head">
+          <div class="content-left">
+          </div>
+          <div class="content-center">            
+		        <object id="myId" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="485" height="363">
+					<param name="movie" value="swf/jscam2.swf"/>					
+					<param name="wmode" value="opaque"/>
+	        		<!--[if !IE]>-->
+					<object type="application/x-shockwave-flash" data="swf/jscam2.swf" width="485" height="363" id="iemyId">
+					<!--<![endif]-->
+						<div>
+							<h1>Alternative content</h1>
+							<p><a href="http://www.adobe.com/go/getflashplayer"><img src="img/dance.gif" alt="Get Adobe Flash player" /></a></p>
+						</div>
+					<!--[if !IE]>-->
+					</object>
+					<!--<![endif]-->
+				</object>
+				<div>
+					<div class="sofaWrap" id="proset1-wrap">
+						<div class="showSofa"><img src="img/sofa.png"></div>
+						<p class="showProName" value="proset1.name" id="proset1-sofa"></p>
+					</div>
+					<div class="sofaWrap" id="proset2-wrap">
+						<div class="showSofa"><img src="img/sofa.png"></div>
+						<p class="showProName" value="proset2.name" id="proset2-sofa"></p>
+					</div>
+					<div class="sofaWrap" id="proset3-wrap">
+						<div class="showSofa"><img src="img/sofa.png"></div>
+						<p class="showProName" value="proset3.name" id="proset3-sofa"></p>
+					</div>
+					<div class="sofaWrap" id="proset4-wrap">
+						<div class="showSofa"><img src="img/sofa.png"></div>
+						<p class="showProName" value="proset4.name" id="proset4-sofa"></p>
+					</div>
+					<div class="sofaWrap" id="proset5-wrap">
+						<div class="showSofa"><img src="img/sofa.png"></div>
+						<p class="showProName" value="proset5.name" id="proset5-sofa"></p>
+					</div>
+					<div class="sofaWrap" id="proset6-wrap">
+						<div class="showSofa"><img src="img/sofa.png"></div>
+						<p class="showProName" value="proset6.name" id="proset6-sofa"></p>
+					</div>
+					<div class="sofaWrap" id="proset7-wrap">
+						<div class="showSofa"><img src="img/sofa.png"></div>
+						<p class="showProName" value="proset7.name" id="proset7-sofa"></p>
+					</div>
+					<div class="sofaWrap" id="proset8-wrap">
+						<div class="showSofa"><img src="img/sofa.png"></div>
+						<p class="showProName" value="proset8.name" id="proset8-sofa"></p>
+					</div>
+					<div class="sofaWrap" id="proset9-wrap">
+						<div class="showSofa"><img src="img/sofa.png"></div>
+						<p class="showProName" value="proset9.name" id="proset9-sofa"></p>
+					</div>
+					<div class="sofaWrap" id="proset10-wrap">
+						<div class="showSofa"><img src="img/sofa.png"></div>
+						<p class="showProName" value="proset10.name" id="proset10-sofa"></p>
+					</div>
+					<div class="sofaWrap" id="proset11-wrap">
+						<div class="showSofa"><img src="img/sofa.png"></div>
+						<p class="showProName" value="proset11.name" id="proset11-sofa"></p>
+					</div>
+					<div class="sofaWrap" id="proset12-wrap">
+						<div class="showSofa"><img src="img/sofa.png"></div>
+						<p class="showProName" value="proset12.name" id="proset12-sofa"></p>
+					</div>
+					<div class="sofaWrap" id="proset13-wrap">
+						<div class="showSofa"><img src="img/sofa.png"></div>
+						<p class="showProName" value="proset13.name" id="proset13-sofa"></p>
+					</div>
+					<div class="sofaWrap" id="proset14-wrap">
+						<div class="showSofa"><img src="img/sofa.png"></div>
+						<p class="showProName" value="proset14.name" id="proset14-sofa"></p>
+					</div>
+				</div>
+          </div>
+          <div id="showSuggerWrap">			    	
+	    	<span id="suggerTitle">喜欢你</span>	
+<!--	    	<span id="suggerTitle">棒棒糖</span>-->
+	    	<span id="showSuggerSum">0</span>			    	
+		    </div>
+		    <div id="showlikeKiss">
+		    	<img src="img/likeKiss.png" id="likekissImg">
+		    	<img src="img/sugger.png" id="suggerImg">
+		    </div>
+		    <div id="showDuckWrap">			    	
+		    	<span id="duckTitle">么么哒</span>
+<!--		    	<span id="duckTitle2">去污皂</span>-->
+		    	<span id="showDuckSum">0</span>			    	
+		    </div>
+		    <div id="showDiffWrap">			    	
+		    	<span id="diffTitle">差距：</span>			    	
+		    	<span id="showDiffSum">0</span>			    	
+		    </div>             
+          <div class="content-right">
+              <textarea class="setName textBg" rows="1" id="textArea1"></textarea>
+              <textarea class="customInfo textBg" rows="3" id="textArea2"></textarea>              
+          </div>
+                <!--显示圣剑裁决图片的div-->
+          <div id="blade-Rule">
+		    <ul>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/0.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/1.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/2.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/3.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/4.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/5.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/6.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/7.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/8.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/9.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/10.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/11.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/12.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/13.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/14.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/15.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/16.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/17.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/18.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/19.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/20.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/21.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/22.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/23.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/24.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/25.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/26.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/27.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/28.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/29.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/30.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/31.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/32.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/33.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/34.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/35.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/36.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/37.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/38.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/39.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/40.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/41.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/42.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/43.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/44.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/45.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/46.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/47.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/48.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/49.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/50.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/51.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/52.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/53.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/54.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/55.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/56.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/57.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/58.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/59.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/60.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/61.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/62.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/63.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/64.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/65.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/66.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/67.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/68.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/69.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/70.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/71.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/72.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/73.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/74.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/75.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/76.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/77.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/78.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/79.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/80.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/81.png" alt=""/></li>
+				<li class="bladeLi"><img src="img/se/shenjiancaijue/82.png" alt=""/></li>
+			</ul>
+          </div>
+               <!--显示万灭心钟图片的div-->
+          <div id="tenThousand-Bell">
+		    <ul>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/0.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/1.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/2.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/3.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/4.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/5.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/6.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/7.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/8.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/9.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/10.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/11.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/12.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/13.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/14.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/15.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/16.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/17.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/18.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/19.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/20.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/21.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/22.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/23.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/24.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/25.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/26.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/27.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/28.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/29.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/30.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/31.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/32.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/33.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/34.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/35.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/36.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/37.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/38.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/39.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/40.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/41.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/42.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/43.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/44.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/45.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/46.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/47.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/48.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/49.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/50.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/51.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/52.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/53.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/54.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/55.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/56.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/57.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/58.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/59.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/60.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/61.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/62.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/63.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/64.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/65.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/66.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/67.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/68.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/69.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/70.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/71.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/72.png" alt=""/></li>
+				<li class="bellLi"><img src="img/se/wanmiexinzhong/73.png" alt=""/></li>
+			</ul>
+          </div>
+              <!--显示神魔降临图片的div-->
+          <div id="devil-Arrive">
+		    <ul>
+				<li class="devilLi"><img src="img/se/shenmojianglin/0.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/1.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/2.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/3.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/4.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/5.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/6.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/7.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/8.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/9.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/10.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/11.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/12.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/13.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/14.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/15.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/16.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/17.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/18.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/19.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/20.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/21.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/22.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/23.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/24.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/25.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/26.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/27.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/28.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/29.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/30.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/31.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/32.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/33.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/34.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/35.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/36.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/37.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/38.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/39.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/40.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/41.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/42.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/43.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/44.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/45.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/46.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/47.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/48.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/49.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/50.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/51.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/52.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/53.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/54.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/55.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/56.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/57.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/58.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/59.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/60.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/61.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/62.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/63.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/64.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/65.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/66.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/67.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/68.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/69.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/70.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/71.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/72.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/73.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/74.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/75.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/76.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/77.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/78.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/79.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/80.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/81.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/82.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/83.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/84.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/85.png" alt=""/></li>
+				<li class="devilLi"><img src="img/se/shenmojianglin/86.png" alt=""/></li>
+			</ul>
+          </div>
+          <!--显示洪荒之力的图片-->
+          <div id="haotic-Power">
+		    <ul>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/0.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/1.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/2.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/3.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/4.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/5.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/6.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/7.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/8.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/9.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/10.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/11.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/12.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/13.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/14.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/15.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/16.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/17.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/18.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/19.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/20.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/21.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/22.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/23.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/24.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/25.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/26.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/27.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/28.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/29.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/30.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/31.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/32.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/33.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/34.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/35.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/36.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/37.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/38.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/39.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/40.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/41.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/42.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/43.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/44.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/45.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/46.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/47.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/48.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/49.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/50.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/51.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/52.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/53.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/54.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/55.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/56.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/57.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/58.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/59.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/60.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/61.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/62.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/63.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/64.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/65.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/66.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/67.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/68.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/69.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/70.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/71.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/72.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/73.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/74.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/75.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/76.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/77.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/78.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/79.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/80.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/81.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/82.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/83.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/84.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/85.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/86.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/87.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/88.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/89.png" alt=""/></li>
+				<li class="haoticLi"><img src="img/se/honghuangzhili/90.png" alt=""/></li>
+			</ul>
+          </div>
+          
+          <div id="show-sugger1">
+		    <ul>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/0.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/1.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/2.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/3.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/4.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/5.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/6.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/7.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/8.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/9.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/10.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/11.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/12.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/13.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/14.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/15.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/16.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/17.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/18.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/19.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/20.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/21.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/22.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/23.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/24.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/25.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/26.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/27.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/28.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/29.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/30.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/31.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/32.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/33.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/34.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/35.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/36.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/37.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/38.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/39.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/40.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/41.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/42.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/43.png" alt=""/></li>
+				<li class="su1Li"><img src="img/se/smallDuang/sugger1/44.png" alt=""/></li>
+			</ul>
+          </div>
+          <div id="show-sugger5">
+		    <ul>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/0.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/1.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/2.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/3.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/4.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/5.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/6.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/7.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/8.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/9.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/10.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/11.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/12.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/13.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/14.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/15.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/16.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/17.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/18.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/19.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/20.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/21.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/22.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/23.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/24.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/25.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/26.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/27.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/28.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/29.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/30.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/31.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/32.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/33.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/34.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/35.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/36.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/37.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/38.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/39.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/40.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/41.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/42.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/43.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/44.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/45.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/46.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/47.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/48.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/49.png" alt=""/></li>
+				<li class="su5Li"><img src="img/se/smallDuang/sugger5/50.png" alt=""/></li>
+			</ul>
+          </div>
+          <div id="show-sugger10">
+		    <ul>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/0.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/1.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/2.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/3.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/4.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/5.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/6.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/7.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/8.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/9.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/10.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/11.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/12.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/13.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/14.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/15.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/16.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/17.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/18.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/19.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/20.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/21.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/22.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/23.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/24.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/25.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/26.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/27.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/28.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/29.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/30.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/31.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/32.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/33.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/34.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/35.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/36.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/37.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/38.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/39.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/40.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/41.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/42.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/43.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/44.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/45.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/46.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/47.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/48.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/49.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/50.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/51.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/52.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/53.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/54.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/55.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/56.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/57.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/58.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/59.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/60.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/61.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/62.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/63.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/64.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/65.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/66.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/67.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/68.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/69.png" alt=""/></li>
+				<li class="su10Li"><img src="img/se/smallDuang/sugger10/70.png" alt=""/></li>
+			</ul>
+          </div>
+          <div id="show-sugger50">
+		    <ul>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/0.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/1.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/2.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/3.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/4.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/5.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/6.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/7.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/8.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/9.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/10.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/11.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/12.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/13.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/14.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/15.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/16.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/17.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/18.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/19.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/20.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/21.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/22.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/23.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/24.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/25.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/26.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/27.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/28.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/29.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/30.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/31.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/32.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/33.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/34.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/35.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/36.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/37.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/38.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/39.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/40.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/41.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/42.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/43.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/44.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/45.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/46.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/47.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/48.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/49.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/50.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/51.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/52.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/53.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/54.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/55.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/56.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/57.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/58.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/59.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/60.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/61.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/62.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/63.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/64.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/65.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/66.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/67.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/68.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/69.png" alt=""/></li>
+				<li class="su50Li"><img src="img/se/smallDuang/sugger50/70.png" alt=""/></li>
+			</ul>
+          </div>
+          <div id="show-duck1">
+            <ul>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/0.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/1.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/2.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/3.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/4.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/5.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/6.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/7.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/8.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/9.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/10.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/11.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/12.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/13.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/14.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/15.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/16.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/17.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/18.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/19.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/20.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/21.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/22.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/23.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/24.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/25.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/26.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/27.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/28.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/29.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/30.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/31.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/32.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/33.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/34.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/35.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/36.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/37.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/38.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/39.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/40.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/41.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/42.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/43.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/44.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/45.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/46.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/47.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/48.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/49.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/50.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/51.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/52.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/53.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/54.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/55.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/56.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/57.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/58.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/59.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/60.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/61.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/62.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/63.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/64.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/65.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/66.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/67.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/68.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/69.png" alt=""/></li>
+				<li class="du1Li"><img src="img/se/smallDuang/duck1/70.png" alt=""/></li>
+			</ul>
+          </div>
+          <div id="show-duck5">
+		    <ul>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/0.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/1.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/2.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/3.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/4.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/5.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/6.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/7.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/8.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/9.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/10.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/11.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/12.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/13.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/14.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/15.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/16.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/17.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/18.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/19.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/20.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/21.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/22.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/23.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/24.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/25.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/26.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/27.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/28.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/29.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/30.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/31.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/32.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/33.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/34.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/35.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/36.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/37.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/38.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/39.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/40.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/41.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/42.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/43.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/44.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/45.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/46.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/47.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/48.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/49.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/50.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/51.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/52.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/53.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/54.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/55.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/56.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/57.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/58.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/59.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/60.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/61.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/62.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/63.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/64.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/65.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/66.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/67.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/68.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/69.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/70.png" alt=""/></li>
+				<li class="du5Li"><img src="img/se/smallDuang/duck5/71.png" alt=""/></li>
+			</ul>
+          </div>
+          <div id="show-duck10">
+		    <ul>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/0.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/1.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/2.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/3.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/4.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/5.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/6.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/7.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/8.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/9.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/10.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/11.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/12.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/13.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/14.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/15.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/16.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/17.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/18.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/19.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/20.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/21.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/22.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/23.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/24.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/25.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/26.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/27.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/28.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/29.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/30.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/31.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/32.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/33.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/34.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/35.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/36.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/37.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/38.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/39.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/40.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/41.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/42.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/43.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/44.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/45.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/46.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/47.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/48.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/49.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/50.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/51.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/52.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/53.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/54.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/55.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/56.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/57.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/58.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/59.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/60.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/61.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/62.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/63.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/64.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/65.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/66.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/67.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/68.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/69.png" alt=""/></li>
+				<li class="du10Li"><img src="img/se/smallDuang/duck10/70.png" alt=""/></li>
+			</ul>
+          </div>
+          <div id="show-duck50">
+		    <ul>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/0.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/1.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/2.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/3.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/4.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/5.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/6.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/7.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/8.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/9.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/10.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/11.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/12.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/13.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/14.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/15.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/16.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/17.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/18.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/19.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/20.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/21.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/22.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/23.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/24.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/25.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/26.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/27.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/28.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/29.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/30.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/31.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/32.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/33.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/34.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/35.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/36.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/37.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/38.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/39.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/40.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/41.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/42.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/43.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/44.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/45.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/46.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/47.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/48.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/49.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/50.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/51.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/52.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/53.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/54.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/55.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/56.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/57.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/58.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/59.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/60.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/61.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/62.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/63.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/64.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/65.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/66.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/67.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/68.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/69.png" alt=""/></li>
+				<li class="du50Li"><img src="img/se/smallDuang/duck50/70.png" alt=""/></li>
+			</ul>
+          </div>
+      </div>
+      <div class="content-foot">
+          <div class="content-foot-top">
+          	<div id="buttonWrap">
+	          	<div class="figureWrap">
+	              <span>糖</span>
+	              <button type="button" class="changeButton" hidefocus="true" onclick="sugger1Click()">1</button>
+	              <button type="button" class="changeButton" hidefocus="true" onclick="sugger5Click()">5</button>
+	              <button type="button" class="changeButton" hidefocus="true" onclick="sugger10Click()">10</button>
+	              <button type="button" class="changeButton" hidefocus="true" onclick="sugger50Click()">50</button>
+	              <button type="button" class="changeButton" hidefocus="true" onclick="sugger100Click()">100</button>
+	              <button type="button" class="changeButton" hidefocus="true" onclick="sugger500Click()">500</button>
+	              <button type="button" class="changeButton" hidefocus="true" onclick="sugger1000Click()">1000</button>
+	              <span class="writeTitle">输入值</span>
+	              <input type="text" id="suggerInput" class="form-input" size="10" name="suggerSum">
+	              <button type="button" class="changeButton" hidefocus="true" onclick="addsuggerNumber()">加糖分</button>
+	              <button type="button" class="changeButton" hidefocus="true" onclick="changesuggerSum()">改总糖分</button>
+	              <button type="button" class="changeButton" hidefocus="true" onclick="changeSuggerTitle()">改糖名</button>
+	            </div>
+	            <div class="figureWrap">
+	              <span>鸭</span>
+	              <button type="button" class="changeButton" hidefocus="true" onclick="duck1Click()">1</button>
+	              <button type="button" class="changeButton" hidefocus="true" onclick="duck5Click()">5</button>
+	              <button type="button" class="changeButton" hidefocus="true" onclick="duck10Click()">10</button>
+	              <button type="button" class="changeButton" hidefocus="true" onclick="duck50Click()">50</button>
+	              <button type="button" class="changeButton" hidefocus="true" onclick="duck100Click()">100</button>
+	              <button type="button" class="changeButton" hidefocus="true" onclick="duck500Click()">500</button>
+	              <button type="button" class="changeButton" hidefocus="true" onclick="duck1000Click()">1000</button>
+	              <span class="writeTitle">输入值</span>
+	              <input type="text" id="duckInput" class="form-input" size="10" name="duckSum">
+	              <button type="button" class="changeButton" hidefocus="true" onclick="addduckNumber()">加鸭分</button>
+	              <button type="button" class="changeButton" hidefocus="true" onclick="changeduckSum()">改总鸭分</button>
+	              <button type="button" class="changeButton" hidefocus="true" onclick="changeDuckTitle()">改鸭名</button>
+	            </div>
+	            <div class="figureWrap">
+	              <button id="changeBackground" type="button" onclick="clickChangeBg()" hidefocus="true">更换背景</button>
+	              <button id="resatrt" type="button" onclick="restart()" hidefocus="true">重新开始</button>
+	              <button id="robMarriage" type="button" hidefocus="true" onclick="changeTeamTitle()">比分切换</button>
+	              <button id="openScreen" type="button"  hidefocus="true" onclick="fullScreen()">主播全屏</button>
+	              <button id="closeScreen" type="button"  hidefocus="true" onclick="closeFullScreen()">关闭全屏</button>	                                      
+	              <span>&nbsp;|&nbsp;</span>
+	              <a href="funModel.html" id="a-happy" class="">娱乐模式</a>
+	              <a href="chatModel.html" id="a-chat" class="">连麦模式</a>
+	              <a href="merryMode.html"  id="a-Marriage" class="">相亲模式</a>
+	            </div>
+            </div>
+            <div id="calcWrap">
+               <div id="calcHead">
+               	  <input type="text" id="addNumber" class="form-input" size="10" name="addNumber">
+               	  <button type="button" class="changeButton" hidefocus="true" onclick="addCalcSugger()">加糖</button>
+                  <button type="button" class="changeButton" hidefocus="true" onclick="addCalcDuck()">加鸭</button>
+               </div>
+               <div id="calcContent">
+               	   <div class="figureRow">
+               	   	  <button type="button" class="changeButton" hidefocus="true" onclick="input(value)" value="1">1</button>
+		              <button type="button" class="changeButton" hidefocus="true" onclick="input(value)" value="2">2</button>
+		              <button type="button" class="changeButton" hidefocus="true" onclick="input(value)" value="3">3</button>
+		              <button type="button" class="changeButton" hidefocus="true" onclick="plus()" value="+">+</button>
+               	   </div>
+               	   <div class="figureRow">
+               	   	  <button type="button" class="changeButton" hidefocus="true" onclick="input(value)" value="4">4</button>
+		              <button type="button" class="changeButton" hidefocus="true" onclick="input(value)" value="5">5</button>
+		              <button type="button" class="changeButton" hidefocus="true" onclick="input(value)" value="6">6</button>
+		              <button type="button" class="changeButton" hidefocus="true" onclick="minus()" value="-">-</button>
+               	   </div>
+               	   <div class="figureRow">
+               	   	  <button type="button" class="changeButton" hidefocus="true" onclick="input(value)" value="7">7</button>
+		              <button type="button" class="changeButton" hidefocus="true" onclick="input(value)" value="8">8</button>
+		              <button type="button" class="changeButton" hidefocus="true" onclick="input(value)" value="9">9</button>
+		              <button type="button" class="changeButton" hidefocus="true" onclick="times()" value="*">*</button>
+               	   </div>
+               	   <div class="figureRow">
+               	   	  <button type="button" class="changeButton" hidefocus="true" onclick="input(value)" value="0">0</button>
+		              <button type="button" class="changeButton" hidefocus="true" onclick="myclear()" value="清">清</button>
+		              <button type="button" class="changeButton" hidefocus="true" onclick="equal()" value="=">=</button>
+		              <button type="button" class="changeButton" hidefocus="true" onclick="divide()" value="/">/</button>
+               	   </div>
+               </div>
+            </div>
+          </div>
+          <div class="content-foot-middle">              
+	      	 <div>
+	      	 	<div class="MixMinWrap">
+	      	 		<p>圣剑裁决最低触发分数（含）</p>
+	      	 		<input type="text"  class="form-input" size="10" value="100" id="minInputJ">
+	      	 	</div>
+	      	 	<div class="MixMinWrap">
+		      	 	<p>圣剑裁决最高触发分数（不含）</p>
+		      	 	<input type="text"  class="form-input" size="10" value="500" id="maxInputJ">
+		      	</div>
+		      	<div class="MixMinWrap">
+		      	 	<p>万灭心钟最低触发分数（含）</p>
+		      	 	<input type="text"  class="form-input" size="10" value="500" id="minInputZ">
+		      	</div>
+		      	<div class="MixMinWrap">
+		      	 	<p>万灭心钟最高触发分数（不含）</p>
+		      	 	<input type="text"  class="form-input" size="10" value="1000" id="maxInputZ">
+		      	</div>
+		      	<div class="MixMinWrap">
+		      	 	<p>神魔降临最低触发分数（含）</p>
+		      	 	<input type="text"  class="form-input" size="10" value="1000" id="minInputM">
+		      	</div>
+		      	<div class="MixMinWrap">
+		      	 	<p>神魔降临最高触发分数（不含）</p>
+		      	 	<input type="text"  class="form-input" size="10" value="1500" id="maxInputM">
+		      	</div>
+		      	<div class="MixMinWrap">
+		      	 	<p>洪荒之力最低触发分数（含）</p>
+		      	 	<input type="text"  class="form-input" size="10" value="1500" id="minInputH">
+		      	</div>
+		      	<div class="MixMinWrap">
+		      	 	<p>洪荒之力最高触发分数（不含）</p>
+		      	 	<input type="text"  class="form-input" size="10" value="999999" id="maxInputH">
+		      	</div>
+		      	<div class="MixMinWrap">
+		      	<button type="button"  hidefocus="true" id="startDuang" onclick="openDuang()">启用小特效</button>
+		      	<button type="button"  hidefocus="true" id="endDuang" onclick="closeDuang()">关闭小特效</button>
+		      	</div>
+	      	 </div> 	          		      
+         </div>          
+      </div>
+</div>
+<div id="tipDiv">亮灯队分数不足</div>
+<div id="musicWrap"></div>
+<!--页面左边区域结束 -->
+<script src="lib/jquery-1.4.2.js" type="text/javascript"></script>
+<!--更换背景按钮和牵手成功按钮的特效的js文件-->
+<script src="js/changeBackground.js" type="text/javascript"></script>
+<script src="js/chatDuang.js" type="text/javascript"></script>
+<!--兼容IE嵌入Flash的swfobject.js-->
+<script type="text/javascript" src="lib/swfobject.js"></script>
+<script type="text/javascript" src="js/showSofa.js"></script>
+<script type="text/javascript">
+	swfobject.embedSWF("swf/jscam2.swf", "myId","485","363","9.0.0", "expressInstall.swf", flashvars, params, attributes);	
+</script>
+<script>
+	showSofa1();
+	showSofa2();
+	showSofa3();
+	showSofa4();
+	showSofa5();
+	showSofa6();
+	showSofa7();
+	showSofa8();
+	showSofa9();
+	showSofa10();
+	showSofa11();
+	showSofa12();
+	showSofa13();
+	showSofa14();
+</script>
+</body>
+</html>

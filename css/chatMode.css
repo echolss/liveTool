@@ -1,0 +1,566 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+body {
+	background: #EDEDED;
+}
+/*button {
+	box-sizing:content-box;
+    -moz-box-sizing:content-box; /* Firefox */
+    -webkit-box-sizing:content-box; /* Safari */;
+}*/
+.content {
+    width: 960px;
+    height: 900px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.content,.message {
+	float: left;
+}
+.content-head {
+    width: 960px;
+    height: 600px;
+    background: #d4d0cf;
+    position: relative;
+    
+}
+#success-hand,
+#rob-Marriage,
+#change-name {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	display: none;
+}
+/*#robBg,
+#sucBg,
+#renameBg {
+	display: none;
+}*/
+.message {
+    width: 650px;
+    height: 900px;
+    margin-left: 25px;
+    background: #FFFFFF;
+    margin-top: 10px;
+}
+.content-left,
+.content-center,
+.content-right {
+    height: 600px;
+}
+.content-center {
+	width: 500px;
+	float: left;
+	padding-top: 15px;
+}
+.content-right {
+    width: 320px;
+    float: left;
+    padding-top: 15px;
+}
+.content-left {
+    width: 50px;
+    float: left;
+}
+.content-center-top {
+    width: 410px;
+    height: 400px;
+}
+.content-center-top img {
+    width: 410px;
+    height: 400px;
+}
+.content-center-middle,
+.content-center-bottom {
+    width: 410px;
+    height: 110px;
+    margin-top: 6px;
+}
+.lightTexta {
+    resize: none;
+    width: 300px;
+    height: 110px;
+    max-width: 300px;
+    max-height: 110px;
+    background: #D4D0CF;
+}
+.closeDiv {
+	margin-top: 2px;
+    height: 230px;
+}
+.closeTextarea {
+	width: 410px;
+    height: 230px;
+    max-width: 410px;
+    max-height: 230px;
+}
+.setName {
+
+    resize: none;
+    width: 300px;
+    height: 100px;
+    max-width: 300px;
+    max-height: 110px;
+    background: #CECBCB;
+    color: #ff5722;
+    margin-bottom: 15px;
+    
+}
+.customInfo {
+    
+    resize: none;
+    width: 300px;
+    height: 110px;
+    max-width: 300px;
+    max-height: 100px;
+    background: #CECBCB;
+    color: #405ccc;
+}
+
+
+.content-foot {
+    width: 950px;
+    background: #ffffff;
+    padding-left: 10px;
+    margin-top: 15px;
+    padding-top: 15px;
+    height: 250px;
+}
+.allChatContent {
+    resize: none;
+    width: 620px;
+    height: 650px;
+    max-width: 620px;
+    max-height: 650px;
+    overflow-y:scroll;
+    border: none;
+    background: #FFFFFF;
+}
+.oneChatContent {
+    resize: none;
+    width: 540px;
+    height: 100px;
+    max-width: 540px;
+    max-height: 100px;
+    border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 1px solid #cccccc;
+	overflow-y:hidden;
+	color: #AAAAAA;
+	font: 400 14px simsun;
+}
+.message-bottom {
+	width: 650px;
+	height: 100px;
+	margin-top: 15px;
+}
+.content-foot-top,
+.content-foot-middle,
+.content-foot-bottom {
+    width: 960px;
+    /*height: 50px;*/
+}
+
+.lightTeam,
+.putoutTeam,
+.setName,
+.customInfo,
+.instruction {
+	overflow-y:hidden;
+	border: 1px solid #AAAAAA;
+}
+.lightRight {
+	float: right;
+}
+.lightLeft {
+	float: left;
+}
+.lightLeft .wrapLight {
+	line-height: 110px;
+	margin-left: 10px;
+}
+.writeTitle {
+	color: #AAAAAA;
+	font: 400 14px sisum;
+}
+.form-input {
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 1px solid #eeeeee;
+}
+.changeButton {
+	background: #18a8f0;
+    font-size: 12px;
+    padding: 0.5em 0.5em 0.1em 0.5em;
+    /*margin-left: 0.5em;*/
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+}
+#changeBackground,
+#robMarriage,
+#openScreen,
+#changeName,
+#resatrt,
+#closeRename,
+#closeRob,
+#startDuang,
+#endDuang,
+#closeScreen {
+	color: #ffffff;
+    border: none;
+    margin-right: 2px;
+    cursor: pointer;
+    font: 400 12px simsun;
+    padding:6px 6px;
+   
+    
+}
+/*#inputImg1,
+#inputImg2 {
+	background:#FFFFFF;
+	 color: transparent;
+	 width: 100px;
+	 
+}*/
+ .Imgfile {
+    position: relative;
+    display: inline-block;
+    background: #D0EEFF;
+    border: 1px solid #99D3F5;
+    /*border-radius: 4px;*/
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #1E88C7;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+}
+.Imgfile input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.Imgfile:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+}
+#changeBackground {
+    background: #259b24;
+}
+#changeBackground:hover {
+    background: #155615;
+}
+#robMarriage,
+#closeRob,
+#startDuang,
+#endDuang {
+    background: #18a8f0;
+}
+#robMarriage:hover {
+    background: #1c7aa9;
+}
+#closeRename,#closeRob {
+	display: none;
+}
+#openScreen,
+#closeScreen {
+    background: #ffc107;
+}
+#openScreen:hover,
+#closeScreen:hover {
+    background: #d8a409;
+}
+#changeName,
+#closeRename {
+    background: #4285f4;
+}
+#changeName:hover,
+#closeRename {
+    background: #3b7eef;
+}
+#resatrt {
+    background: #ff5722;
+}
+#resatrt:hover {
+    background: #ce491f;
+}
+#a-happy,
+#a-chat,
+#a-Marriage {
+    background: #ffffff;
+    font: 400 12px simsun;
+    padding:0.5em 0.5em;
+    text-decoration: none;
+    margin-right: 2px;
+    display: inline-block;
+}
+#a-happy {
+    color: #4285f4;
+    border: 1px solid #4285f4;
+
+}
+#a-happy:hover {
+    background: #4285f4;
+    color: #ffffff;
+}
+#a-chat{
+    color: #ff5722;
+    border: 1px solid #ff5722;
+}
+#a-chat:hover {
+    background: #ff5722;
+    color: #ffffff;
+}
+#a-Marriage{
+    color: #259b24;
+    border: 1px solid #259b24;
+}
+#a-Marriage:hover {
+    background: #259b24;
+    color: #ffffff;
+}
+#sendButton {
+    font: 400 14px simsun;
+    height:100px;
+    border: none;
+    color: #ffffff;
+    background: #5CB85C;
+    width: 80px;
+    /*line-height:80px;*/
+    /*overflow:visible;
+    padding:1em 0.5em 0 0.5em;*/
+}
+.send-left,.send-right {
+	float: left;
+}
+.send-right {
+	margin-bottom: 0;
+}
+.yellowLight {
+	color: #FAEE1C;
+	font: 700 23px simsun;
+} 
+.redLight {
+	color: #FF0033;
+	font: 700 23px simsun;
+}
+.setName,
+.customInfo {
+	font: 700 25px "微软雅黑";
+}
+.instruction {
+	color: #FF0033;
+	font: 700 20px simsun;
+}
+.content-foot-middle form {
+	display: inline-block;
+}
+.float-Left-div {
+	float: left;
+}
+.for-floatLeft {
+	float: left;
+}
+/*.demo {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}*/
+.form-input {
+	width: 70px;
+}
+.sucLi,.robLi {
+	display: none;
+}
+#tipDiv {
+	font: 400 16px "微软雅黑";
+	color: #FFFFFF;
+	position: absolute;
+	left: 900px;
+	top: 500px;
+	background: rgba(0, 0, 0, 0.6);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = #60000000, endColorstr = #60000000);
+	padding: 15px 20px;
+	display: none;
+}
+.figureWrap {
+	margin-bottom: 10px;
+	/*float: left;*/
+}
+.figureWrap button {
+	margin-right: 3px;
+}
+#buttonWrap {
+	float: left;
+}
+#calcWrap {
+	margin-right: 35px;
+	float: right;
+}
+#calcContent button {
+	width: 30px;
+	height: 25px;
+	margin-right: 5px;
+}
+.figureRow {
+	margin-top: 2px;
+}
+#addNumber {
+	width: 163px;
+	border-bottom: 1px solid #CCCCCC;
+}
+.MixMinWrap input {
+	width: 157px;
+	border-bottom: 1px solid #CCCCCC;
+	color: #555;
+	font: 400 14px "微软雅黑";
+}
+.MixMinWrap {
+	/*display: inline-block;*/
+	float: left;
+	margin: 10px 5px;
+}
+.MixMinWrap p {
+	color: #AAAAAA;
+	font: 400 12px simsun;
+}
+.content-foot-middle {
+	clear: both;
+}
+
+#showSuggerWrap,
+#showDuckWrap,
+#showDiffWrap {
+	position: absolute;
+	left: 448px;
+	background: #ededed;
+	padding: 2px;
+}
+#showSuggerWrap,
+#showDuckWrap,
+#showDiffWrap,
+#showlikeKiss {
+	opacity: 0.7;
+	filter:Alpha(opacity=70);
+}
+#showSuggerWrap {
+	top: 60px;
+}
+#showDuckWrap {
+	top: 190px;
+}
+#showDiffWrap {
+	top: 250px;
+}
+#showlikeKiss {
+	position: absolute;
+	left: 413px;
+	top: 120px;
+	background: #ededed;
+}
+#showlikeKiss img {
+	width: 120px;
+	height: 28px;
+}
+#showSuggerWrap span,
+#showDuckWrap span,
+#showDiffWrap span {
+	font: 400 21px "微软雅黑";
+}
+#diffTitle,
+#showDiffSum {
+	color: #259b24;
+}
+#showSuggerSum {
+	color: #ff5722;
+}
+#showDuckSum {
+	color: #4285f4;
+}
+.content-head {
+	position: relative;
+}
+#blade-Rule,
+#tenThousand-Bell,
+#devil-Arrive,
+#haotic-Power,
+#show-sugger1,
+#show-sugger5, 
+#show-sugger10, 
+#show-sugger50, 
+#show-duck1, 
+#show-duck5, 
+#show-duck10, 
+#show-duck50 {
+	position: absolute;
+	left: 50px;
+	top: 0;
+	display: none;
+	z-index: 1;
+}
+.bladeLi,
+.bellLi,
+.devilLi,
+.haoticLi,
+.su1Li, 
+.su5Li, 
+.su10Li, 
+.su50Li, 
+.du1Li, 
+.du5Li, 
+.du10Li, 
+.du50Li {
+	display: none;
+}
+#suggerImg,
+#suggerTitle2,
+#duckTitle2 {
+	display: none;
+}
+#suggerInput,
+#duckInput {
+	width: 130px;
+}
+.changeButton:hover,
+#startDuang:hover,
+#endDuang:hover {
+	background: #1c7aa9;
+}
+#startDuang,
+#endDuang {
+	margin-top: 7px;
+}
+#closeScreen,
+#endDuang {
+	display: none;
+}
+.sofaWrap,
+.showSofa,
+.showProName {
+	float: left;
+}
+.sofaWrap {
+	margin: 15px;
+	display: none;
+}
+.showSofa img {
+	width: 30px;
+	height: 40px;
+}
+.showProName {
+	color: #FFFFFF;
+	font: 400 16px "微软雅黑";
+	margin-top: 8px;
+}

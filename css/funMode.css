@@ -1,0 +1,605 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+body {
+	background: #EDEDED;
+}
+
+.content {
+    width: 960px;
+    height: 900px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.content,.message {
+	float: left;
+}
+.content-head {
+    width: 960px;
+    height: 620px;
+    background: #d4d0cf;
+    position: relative;
+    
+}
+
+
+.content-left,
+.content-center,
+.content-right {
+    height: 620px;
+}
+.content-center {
+	width: 800px;
+	float: left;
+	padding-top: 2px;
+}
+
+.content-left {
+    width: 70px;
+    float: left;
+}
+.content-center-top {
+    width: 410px;
+    height: 400px;
+}
+.content-center-top img {
+    width: 410px;
+    height: 400px;
+}
+.content-center-middle,
+.content-center-bottom {
+    width: 410px;
+    height: 110px;
+    margin-top: 6px;
+}
+
+.closeDiv {
+	margin-top: 2px;
+    height: 230px;
+}
+.closeTextarea {
+	width: 410px;
+    height: 230px;
+    max-width: 410px;
+    max-height: 230px;
+}
+
+
+.content-foot {
+    width: 950px;
+    background: #ffffff;
+    padding-left: 10px;
+    margin-top: 15px;
+    padding-top: 15px;
+    height: 150px;
+}
+
+.content-foot-top,
+.content-foot-middle,
+.content-foot-bottom {
+    width: 960px;
+    /*height: 50px;*/
+}
+
+.lightTeam,
+.putoutTeam,
+.setName,
+.customInfo,
+.instruction {
+	overflow-y:hidden;
+	border: 1px solid #AAAAAA;
+}
+.lightRight {
+	float: right;
+}
+.lightLeft {
+	float: left;
+}
+.lightLeft .wrapLight {
+	line-height: 110px;
+	margin-left: 10px;
+}
+.writeTitle {
+	color: #AAAAAA;
+	font: 400 14px sisum;
+}
+.form-input {
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 1px solid #eeeeee;
+}
+.changeButton {
+	background: #18a8f0;
+    font-size: 12px;
+    padding: 0.5em 0.5em 0.1em 0.5em;
+    /*margin-left: 0.5em;*/
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+}
+#changeBackground,
+#robMarriage,
+#openScreen,
+#changeName,
+#resatrt,
+#closeRename,
+#closeRob,
+#startDuang,
+#endDuang,
+#closeScreen {
+	color: #ffffff;
+    border: none;
+    margin-right: 2px;
+    cursor: pointer;
+    font: 400 12px simsun;
+    padding:6px 6px;
+   
+    
+}
+/*#inputImg1,
+#inputImg2 {
+	background:#FFFFFF;
+	 color: transparent;
+	 width: 100px;
+	 
+}*/
+ .Imgfile {
+    position: relative;
+    display: inline-block;
+    background: #D0EEFF;
+    border: 1px solid #99D3F5;
+    /*border-radius: 4px;*/
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #1E88C7;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+}
+.Imgfile input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.Imgfile:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+}
+#changeBackground {
+    background: #259b24;
+}
+#changeBackground:hover {
+    background: #155615;
+}
+#robMarriage,
+#closeRob,
+#startDuang,
+#endDuang {
+    background: #18a8f0;
+}
+#robMarriage:hover {
+    background: #1c7aa9;
+}
+#closeRename,#closeRob {
+	display: none;
+}
+#openScreen,
+#closeScreen {
+    background: #ffc107;
+}
+#openScreen:hover,
+#closeScreen:hover {
+    background: #d8a409;
+}
+#changeName,
+#closeRename {
+    background: #4285f4;
+}
+#changeName:hover,
+#closeRename {
+    background: #3b7eef;
+}
+#resatrt {
+    background: #ff5722;
+}
+#resatrt:hover {
+    background: #ce491f;
+}
+#a-happy,
+#a-chat,
+#a-Marriage {
+    background: #ffffff;
+    font: 400 12px simsun;
+    padding:0.5em 0.5em;
+    text-decoration: none;
+    margin-right: 2px;
+    display: inline-block;
+}
+#a-happy {
+    color: #4285f4;
+    border: 1px solid #4285f4;
+
+}
+#a-happy:hover {
+    background: #4285f4;
+    color: #ffffff;
+}
+#a-chat{
+    color: #ff5722;
+    border: 1px solid #ff5722;
+}
+#a-chat:hover {
+    background: #ff5722;
+    color: #ffffff;
+}
+#a-Marriage{
+    color: #259b24;
+    border: 1px solid #259b24;
+}
+#a-Marriage:hover {
+    background: #259b24;
+    color: #ffffff;
+}
+#sendButton {
+    font: 400 14px simsun;
+    height:100px;
+    border: none;
+    color: #ffffff;
+    background: #5CB85C;
+    width: 80px;
+    /*line-height:80px;*/
+    /*overflow:visible;
+    padding:1em 0.5em 0 0.5em;*/
+}
+.send-left,.send-right {
+	float: left;
+}
+.send-right {
+	margin-bottom: 0;
+}
+.yellowLight {
+	color: #FAEE1C;
+	font: 700 23px simsun;
+} 
+.redLight {
+	color: #FF0033;
+	font: 700 23px simsun;
+}
+.setName,
+.customInfo {
+	font: 700 25px "微软雅黑";
+}
+.instruction {
+	color: #FF0033;
+	font: 700 20px simsun;
+}
+.content-foot-middle form {
+	display: inline-block;
+}
+.float-Left-div {
+	float: left;
+}
+.for-floatLeft {
+	float: left;
+}
+/*.demo {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}*/
+.form-input {
+	width: 70px;
+}
+.sucLi,.robLi {
+	display: none;
+}
+#tipDiv {
+	font: 400 16px "微软雅黑";
+	color: #FFFFFF;
+	position: absolute;
+	left: 900px;
+	top: 500px;
+	background: rgba(0, 0, 0, 0.6);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = #60000000, endColorstr = #60000000);
+	padding: 15px 20px;
+	display: none;
+}
+#welcomeDiv {
+	font: 700 30px simsun;
+	color: #FF0000;
+	position: absolute;
+	left: 200px;
+	top: 75px;
+	padding: 15px 20px;
+	display: none;
+}
+#shadowDiv {
+	font: 700 30px simsun;
+	color: #FFFFFF;
+	position: absolute;
+	left: 201px;
+	top: 76px;
+	padding: 15px 20px;
+	display: none;
+}
+.figureWrap {
+	margin-bottom: 10px;
+	/*float: left;*/
+}
+.figureWrap button {
+	margin-right: 3px;
+}
+#buttonWrap {
+	float: left;
+}
+#calcWrap {
+	margin-right: 35px;
+	float: right;
+}
+#calcContent button {
+	width: 30px;
+	height: 25px;
+	margin-right: 5px;
+}
+.figureRow {
+	margin-top: 2px;
+}
+#addNumber {
+	width: 163px;
+	border-bottom: 1px solid #CCCCCC;
+}
+.MixMinWrap input {
+	width: 157px;
+	border-bottom: 1px solid #CCCCCC;
+	color: #555;
+	font: 400 14px "微软雅黑";
+}
+.MixMinWrap {
+	/*display: inline-block;*/
+	float: left;
+	margin: 10px 5px;
+}
+.MixMinWrap p {
+	color: #AAAAAA;
+	font: 400 12px simsun;
+}
+.content-foot-middle {
+	clear: both;
+}
+
+#showSuggerWrap,
+#showDuckWrap,
+#showDiffWrap {
+	position: absolute;
+	left: 448px;
+	background: #ededed;
+	padding: 2px;
+}
+#showSuggerWrap {
+	top: 60px;
+}
+#showDuckWrap {
+	top: 190px;
+}
+#showDiffWrap {
+	top: 250px;
+}
+#showlikeKiss {
+	position: absolute;
+	left: 413px;
+	top: 120px;
+	background: #ededed;
+}
+#showlikeKiss img {
+	width: 120px;
+	height: 28px;
+}
+#showSuggerWrap span,
+#showDuckWrap span,
+#showDiffWrap span {
+	font: 400 21px "微软雅黑";
+}
+#diffTitle,
+#showDiffSum {
+	color: #259b24;
+}
+#showSuggerSum {
+	color: #ff5722;
+}
+#showDuckSum {
+	color: #4285f4;
+}
+.content-head {
+	position: relative;
+}
+#show-Protect,
+#park-Car,
+#show-Car,
+#gold-Protect,
+#silver-Protect,
+#suprum-Protect {
+	position: absolute;
+	left: 50px;
+	top: 0;
+	display: none;
+	z-index: 1;
+}
+.protectLi,
+.parkLi,
+.carLi,
+.goldLi,
+.silverLi,
+.suprumLi {
+	display: none;
+}
+#prosetInput,
+#carsetInput {
+	padding: 5px;
+	width: 130px;
+}
+.changeButton:hover,
+#startDuang:hover,
+#endDuang:hover {
+	background: #1c7aa9;
+}
+#startDuang,
+#endDuang {
+	margin-top: 7px;
+}
+#closeScreen,
+#endDuang {
+	display: none;
+}
+.content-center {
+	position: relative;
+}
+.left-protectSet {
+	position: absolute;
+	left: 30px;
+}
+.left-protectSet div,
+.left-protectSet p {
+	float: left;
+}
+.right-protectSet div {
+	float: right;
+}
+.right-protectSet p {
+	float: right;
+}
+.setImg img {
+	width: 28px;
+	height: 28px;
+}
+/*.left-protectSet p,
+.right-protectSet p {
+	line-height: 40px;
+}*/
+.left-protectSet,
+.right-protectSet {
+	font: 700 16px "微软雅黑";
+	min-width: 100px;
+	height: 40px;
+	background: rgba(255,255,255,.58);
+	border-radius: 3px;
+	opacity: 0.7;
+	filter:Alpha(opacity=70);
+}
+#proSet1 {
+	top: 80px;
+	color: #e7403c;
+}
+#proSet3 {
+	top: 140px;
+	color: #985f0d;
+}
+#proSet5 {
+	top: 200px;
+	color: #98430d;
+}
+#proSet7 {
+	top: 260px;
+	color: #4e8b65;
+}
+#proSet9 {
+	top: 320px;
+	color: #8b5859;
+}
+#proSet11 {
+	top: 380px;
+	color: #1f768b;
+}
+#proSet13 {
+	top: 440px;
+	color: #4f8b21;
+}
+.right-protectSet {
+	position: absolute;
+	right: 30px;
+}
+#proSet2 {
+	top: 80px;
+	color: #0a8f08;
+}
+#proSet4 {
+	top: 140px;
+	color: #ff01e6;
+}
+#proSet6 {
+	top: 200px;
+	color: #3f708f;
+}
+#proSet8 {
+	top: 260px;
+	color: #854b8b;
+}
+#proSet10 {
+	top: 320px;
+	color: #8b8174;
+}
+#proSet12 {
+	top: 380px;
+	color: #6b778b;
+}
+#proSet14 {
+	top: 440px;
+	color: #8b8210;
+}
+.carSet {
+	position: absolute;
+	bottom: 30px;
+}
+.carSet img {
+	width: 158px;
+	height: 68px;
+	opacity: 0.5;
+	filter:Alpha(opacity=50);
+}
+#carSet1 {
+	left: 50px;
+}
+#carSet2 {
+	left: 230px;
+}
+#carSet3 {
+	left: 410px;
+}
+#carSet4 {
+	left: 590px;
+}
+.setImg {
+	margin: 6px 2px;
+}
+.setP {
+	margin: 9.5px 2px;
+	cursor: pointer;
+}
+.setCarP {
+	font: 700 16px "微软雅黑";
+	color: rgba(61, 61, 61, 0.67);
+	background: rgba(255,255,255,.44);
+	text-align: center;
+	opacity: 0.9;
+	filter:Alpha(opacity=90);
+	cursor: pointer;
+}
+
+#saveProset,
+#saveCarset,
+select {
+	font: 400 14px simsun;
+	padding: 5px;
+}
+.hideImg {
+	display: none;
+}
+#carsetIds {
+	width: 76px;
+}

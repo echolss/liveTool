@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" href="css/index.css" charset="utf-8">
+	</head>
+	<body id="body">
+		<img src="img/dream.jpg" alt="Bing每日图片超高清"  id="bg-img"><!--http://api.dujin.org/bing/1920.php-->
+		<div id="login-wrap">
+			<h1 id="login-title">登录-Sign in</h1>
+			<form src="http://oa.cdrysj.com:8888/login_rysj_api?callback=flightHandler" id="LoginForm" method="get">
+				<div class="row-wrap">
+					<div class="content-wrap login-img-wrap"><img src="img/phone.png"></div>
+					<div class="content-wrap"><input type="text" class="login-input" placeholder="手机号" id="phone" name="phone"></div>
+				</div>
+				<div class="row-wrap">
+					<div class="content-wrap login-img-wrap"><img src="img/lock.png"></div>
+					<div class="content-wrap"><input type="password" class="login-input" placeholder="密码" id="password" name="password"></div>
+				</div>
+				<div class="row-wrap">
+					<div class="content-wrap login-img-wrap"><img src="img/worker.png"></div>
+					<div class="content-wrap">
+						<select class="login-input" id="selectOm" name="type">
+							<option value ="1" selected>工作人员</option>
+			              	<option value ="2">线上人员</option>
+			              	<option value ="3">线下人员</option>
+			              	<option value ="4">外部人员</option>
+						</select>
+					</div>
+				</div>
+				<div id="checkbox-wrap" class="row-wrap">
+					<input class="magic-checkbox" type="checkbox" name="layout" id="nextLoad">
+					<label for="nextLoad">下次自动登录&nbsp;</label>
+					<input class="magic-checkbox" type="checkbox" name="layout" id="robotCheck">
+					<label for="robotCheck">机器人检测</label>
+				</div>
+				<div class="row-wrap"><button id="login-button" type="button" onclick="checkForm()">LOGIN</button></div>
+			</form>
+			<div id="beautiful-img" class="row-wrap" onclick="openStory()">{点我查看今日美图介绍}</div>
+			<div class="row-wrap"><p value="message" id="message"></p></div>
+		</div>
+		<!--<div id="imgStory-wrap">
+			<p id="imgStory-title">水中的绽放</p>
+			<p id="imgStory-content">
+				杉叶藻是一种水生植物，它们生长在广阔的高海拔地域范围内，
+				从北美的湿地到青藏高原的高海拔地区，这种多年生草本植物栖息在浅水和泥中。
+				杉叶藻还有入药的效用，在草药中，杉叶藻有时用来治疗伤口。它们的长相也是超级让人赏心悦目的杉叶形状。
+			</p>
+			<p class="img-bn-wrap">
+				<button id="download-img"><a href="#" id="img-a-download">下载美图</a></button>
+				<button id="close-imgStory" onclick="closeStory()">关闭</button>
+			</p>
+		</div>-->
+		<div id="mask">
+		</div>
+		<div id="tip">
+				<div class="tip-head">
+					<div class="tip-Chinese">提示</div>
+					<div class="close-img-wrap">
+						<img src="img/close.png" id="close-img" onclick="hideTip()">
+					</div>
+				</div>
+				<div class="tip-body">
+					<div class="tip-img-wrap">
+						<img src="img/sad.png" class="tip-img" id="sad-img">
+						<img src="img/fail.png" class="tip-img" id="fail-img">
+						<img src="img/success.png"  class="tip-img" id="success-img">
+					</div>
+					<div id="tip-info">手机号码格式有误！</div>
+				</div>
+				<div class="tip-foot">
+					<div class="tip-bn-wrap">
+						<button id="close-tip-bn"  onclick="hideTip()">确定</button>
+					</div>
+				</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="lib/jquery-1.4.2.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script>
+		$(window).load(function() {
+		    var theWindow        = $(window),
+		        $bg              = $("#bg-img");
+		        $bg.attr('width',theWindow.width());
+		        $bg.attr('height',theWindow.height());
+		});
+	</script>
+	<script>
+	    if( !('placeholder' in document.createElement('input')) ){
+	
+	        $('input[placeholder],textarea[placeholder]').each(function(){
+	            var that = $(this),
+	                    text= that.attr('placeholder');
+	            if(that.val()===""){
+	                that.val(text).addClass('placeholder');
+	            }
+	            that.focus(function(){
+	                if(that.val()===text){
+	                    that.val("").removeClass('placeholder');
+	                }
+	            })
+	                    .blur(function(){
+	                        if(that.val()===""){
+	                            that.val(text).addClass('placeholder');
+	                        }
+	                    })
+	                    .closest('form').submit(function(){
+	                        if(that.val() === text){
+	                            that.val('');
+	                        }
+	                    });
+	        });
+	    }
+	</script>
+</html>
